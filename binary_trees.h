@@ -48,48 +48,8 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 /*Delete node*/
 void binary_tree_delete(binary_tree_t *tree);
 
-/*Find node*/
-binary_tree_t *binary_tree_find(const binary_tree_t *tree, int value);
-
-/*Get height*/
-size_t binary_tree_height(const binary_tree_t *tree);
-
-/*Get depth*/
-size_t binary_tree_depth(const binary_tree_t *tree);
-
-/*Get size*/
-size_t binary_tree_size(const binary_tree_t *tree);
-
-/*Get balance*/
-int binary_tree_balance(const binary_tree_t *tree);
-
-/*Is full*/
-int binary_tree_is_full(const binary_tree_t *tree);
-
-/*Is perfect*/
-int binary_tree_is_perfect(const binary_tree_t *tree);
-
-/*Is complete*/
-int binary_tree_is_complete(const binary_tree_t *tree);
-
-/*Is binary tree*/
-int binary_tree_is_bst(const binary_tree_t *tree);
-
-/*Is AVL tree*/
-int binary_tree_is_avl(const binary_tree_t *tree);
-
-/*Is Max binary tree*/
-int binary_tree_is_heap(const binary_tree_t *tree);
-
-/*Inorder traversal*/
-void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
-
-/*Preorder traversal*/
-void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
-
-/*Postorder traversal*/
-void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
-
+/*Check if node is a leaf*/
+int binary_tree_is_leaf(const binary_tree_t *node);
 
 
 #endif /* _BINARY_TREES_H_ */
